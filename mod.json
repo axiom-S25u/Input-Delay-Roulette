@@ -38,12 +38,6 @@
 			"default": 200,
 			"min": 0,
 			"max": 500
-		},
-		"chaos-mode": {
-			"name": "chaos mode",
-			"description": "delay changes while you are playing. pure hell",
-			"type": "bool",
-			"default": false
 		}
 	}
 }
