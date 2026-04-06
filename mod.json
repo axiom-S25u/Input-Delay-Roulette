@@ -10,7 +10,7 @@
 	"name": "input delay roulette",
 	"version": "v1.0.1",
 	"developer": "axiom",
-	"tags" : ["joke", "gameplay"]
+	"tags" : ["joke", "gameplay"],
 	"description": "random lag every time you die",
 	"links": {
         "source": "https://github.com/axiom-S25u/Input-Delay-Roulette",
