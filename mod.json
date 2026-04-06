@@ -11,6 +11,10 @@
 	"version": "v1.0.0",
 	"developer": "axiom",
 	"description": "random lag every time you die",
+	"links": {
+        "source": "https://github.com/axiom-S25u/Input-Delay-Roulette",
+        "community": "https://discord.gg/TWn99qzmUA"
+    },
 	"dependencies": {
 		"geode.node-ids": ">=v1.20.0"
 	},
