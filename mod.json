@@ -8,9 +8,10 @@
 	},
 	"id": "axiom.input-delay-roulette",
 	"name": "input delay roulette",
-	"version": "v1.0.0",
+	"version": "v1.0.2",
 	"developer": "axiom",
-	"description": "random lag every time you die",
+	"tags": ["joke", "gameplay"],
+	"description": "the most miserable experience in geometry dash history",
 	"dependencies": {
 		"geode.node-ids": ">=v1.20.0"
 	},
@@ -34,11 +35,65 @@
 			"min": 0,
 			"max": 500
 		},
-		"chaos-mode": {
-			"name": "chaos mode",
-			"description": "delay changes while you are playing. pure hell",
+		"void-click": {
+			"name": "void clicks",
+			"description": "some clicks go into the void",
 			"type": "bool",
 			"default": false
+		},
+		"void-click-rarity": {
+			"name": "void click rarity",
+			"description": "what % of the time void clicks happen",
+			"type": "int",
+			"default": 3,
+			"min": 0,
+			"max": 100
+		},
+		"input-hang-time": {
+			"name": "input hang time",
+			"description": "every click has a chance to sit in limbo forever",
+			"type": "bool",
+			"default": false
+		},
+		"rage-tax": {
+			"name": "rage tax",
+			"description": "+10ms per death. permanent",
+			"type": "bool",
+			"default": false
+		},
+		"fake-input": {
+			"name": "fake input mode",
+			"description": "ghost clicks invented by axiom",
+			"type": "bool",
+			"default": false
+		},
+		"skill-penalty": {
+			"name": "skill penalty",
+			"description": "delay range increases the longer you survive",
+			"type": "bool",
+			"default": false
+		},
+		"jump-anxiety": {
+			"name": "jump anxiety mode",
+			"description": "every click has a chance to have lower gravity",
+			"type": "bool",
+			"default": false
+		},
+		"jump-anxiety-chance": {
+			"name": "jump anxiety chance (%)",
+			"description": "how often gravity dies",
+			"type": "float",
+			"default": 0.5,
+			"min": 0.0,
+			"max": 100.0
+		},
+		"jump-anxiety-strength": {
+			"name": "jump anxiety strength",
+			"description": "gravity multiplier (lower = floatier)",
+			"type": "float",
+			"default": 0.7,
+			"min": 0.1,
+			"max": 2.0
 		}
 	}
 }
