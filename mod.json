@@ -1,0 +1,44 @@
+{
+	"geode": "5.5.3",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "axiom.input-delay-roulette",
+	"name": "input delay roulette",
+	"version": "v1.0.0",
+	"developer": "axiom",
+	"description": "random lag every time you die",
+	"dependencies": {
+		"geode.node-ids": ">=v1.20.0"
+	},
+	"settings": {
+		"enabled": {
+			"name": "enable mod",
+			"type": "bool",
+			"default": true
+		},
+		"min-delay": {
+			"name": "smallest lag (ms)",
+			"type": "int",
+			"default": 0,
+			"min": 0,
+			"max": 500
+		},
+		"max-delay": {
+			"name": "biggest lag (ms)",
+			"type": "int",
+			"default": 200,
+			"min": 0,
+			"max": 500
+		},
+		"chaos-mode": {
+			"name": "chaos mode",
+			"description": "delay changes while you are playing. pure hell",
+			"type": "bool",
+			"default": false
+		}
+	}
+}
