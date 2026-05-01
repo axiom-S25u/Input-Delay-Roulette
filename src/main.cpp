@@ -39,7 +39,11 @@ class $modify(my_play_layer, PlayLayer) {
         m_fields->label->setPosition({sz.width / 2, sz.height - 20.f});
         m_fields->label->setScale(0.5f);
         m_fields->label->setOpacity(255);
-        this->addChild(m_fields->label, 9999);
+        int highestZ = 0;
+        for (CCNode* child : CCArrayExt<CCNode*>(this->m_uiLayer->getChildren())) {
+            if (child->getZOrder() > highestZ) highestZ = child->getZOrder();
+        }
+        this->m_uiLayer->addChild(m_fields->label, highestZ + 1);
         
         m_fields->fake_input_timer = std::uniform_real_distribution<float>(2.f, 10.f)(m_fields->rng);
         
