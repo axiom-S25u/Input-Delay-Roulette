@@ -1,0 +1,59 @@
+{
+	"geode": "5.7.1",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "axiom.rustapi",
+	"name": "RustAPI",
+	"version": "v1.0.0",
+	"developer": "axiom",
+	"early-load": true,
+	"load-priority": "first",
+	"description": "Make Geode mods in Rust :3",
+	"tags": [
+		"universal",
+		"developer"
+	],
+	"links": {
+		"community": "https://discord.gg/E8f6D6XqbW",
+		"source": "https://github.com/axiom-s25u/RustAPI"
+	},
+	"api": {
+		"include": [
+			"include/**/*.hpp"
+		]
+	},
+	"resources": {
+		"files": [
+			"src/scripts/*.rs",
+			"resources/*"
+		]
+	},
+	"settings": {
+		"title-enable-developer-mode": {
+			"type": "title",
+			"name": "Developer Mode (Read Descriptions)"
+		},
+		"enable-developer-mode": {
+			"type": "bool",
+			"name": "Enable Developer Mode",
+			"description": "Load built-in scripts and environment for developing mods on game startup. Only enable if you know what you're doing.",
+			"default": false,
+			"requires-restart": true
+		},
+		"title-developer-tools": {
+			"type": "title",
+			"name": "Developer Tools"
+		},
+		"enable-executor": {
+			"name": "Enable Script Executor",
+			"description": "Show/hide the script executor ImGui window.",
+			"type": "bool",
+			"default": false,
+			"enable-if": "enable-developer-mode"
+		}
+	}
+}

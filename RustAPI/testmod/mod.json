@@ -1,0 +1,24 @@
+{
+	"geode": "5.7.1",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "axiom.rustapi.testmod",
+	"name": "RustAPI TestMod",
+	"version": "v0.1.0",
+	"developer": "axiom",
+	"description": "rustapitesttt",
+	"dependencies": {
+		"axiom.rustapi": {
+			"version": ">=1.0.0"
+		}
+	},
+	"resources": {
+		"files": [
+			"src/*.rs"
+		]
+	}
+}	
